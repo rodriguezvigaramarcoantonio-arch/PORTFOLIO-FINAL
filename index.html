@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Proyectos</title>
+  <meta name="description" content="Portfolio de proyectos con presentaciones y documentación en PDF." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%230a0a0a'/%3E%3Cpath d='M35 82V38h12v44H35zm19 0V38h12v44H54zm19 0V38h12v44H73z' fill='%23ffffff'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Proyectos</h1>
+        <p class="sub">Portfolio (enlace para CV) · PDFs incluidos</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#proyectos">Ver proyectos</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="proyectos" class="section">
+      <h2 class="section__title">Proyectos destacados</h2>
+      <p class="section__lead">Cada tarjeta incluye una imagen representativa y acceso directo a los PDFs.</p>
+
+      <div class="grid">
+
+        <article class="card">
+          <a class="card__media" href="presentacion_central_termosolar.pdf" target="_blank" rel="noopener">
+            <img src="cover_termosolar.svg" alt="Central termosolar de torre" loading="lazy" />
+          </a>
+          <div class="card__body">
+            <div class="badge">Energía · Termosolar</div>
+            <h3>Central termosolar de torre</h3>
+            <p class="muted">
+              Diseño conceptual: selección de ubicación, comparación de ciclos (Rankine simple y con extracción),
+              componentes y criterios de dimensionamiento.
+            </p>
+
+            <div class="card__meta">
+              <div><span class="meta__k">Tecnologías:</span> Rankine, heliostatos, sales fundidas</div>
+              <div><span class="meta__k">Entregables:</span> presentación + memoria</div>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn" href="presentacion_central_termosolar.pdf" target="_blank" rel="noopener">Presentación</a>
+              <a class="btn btn--ghost" href="memoria_central_termosolar.pdf" target="_blank" rel="noopener">Memoria</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__media" href="presentacion_suelo_radiante.pdf" target="_blank" rel="noopener">
+            <img src="cover_suelo_radiante.svg" alt="Instalación de suelo radiante" loading="lazy" />
+          </a>
+          <div class="card__body">
+            <div class="badge">HVAC · Hidráulica</div>
+            <h3>Instalación de suelo radiante</h3>
+            <p class="muted">
+              Dimensionamiento hidráulico de una vivienda de dos plantas: circuitos, caudales, pérdidas,
+              selección de bomba y componentes.
+            </p>
+
+            <div class="card__meta">
+              <div><span class="meta__k">Tecnologías:</span> pérdidas de carga, selección de bomba</div>
+              <div><span class="meta__k">Entregables:</span> presentación + memoria</div>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn" href="presentacion_suelo_radiante.pdf" target="_blank" rel="noopener">Presentación</a>
+              <a class="btn btn--ghost" href="memoria_suelo_radiante.pdf" target="_blank" rel="noopener">Memoria</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__media" href="smart_campus_energy_optimization.pdf" target="_blank" rel="noopener">
+            <img src="cover_sceos.svg" alt="Smart Campus Energy Optimization System" loading="lazy" />
+          </a>
+          <div class="card__body">
+            <div class="badge">Project management · ESG</div>
+            <h3>Smart Campus Energy Optimization (SCEOS)</h3>
+            <p class="muted">
+              Propuesta de optimización energética para edificios universitarios: sensórica IoT, analítica,
+              dashboard, KPIs y enfoque ESG/SDGs.
+            </p>
+
+            <div class="card__meta">
+              <div><span class="meta__k">Tecnologías:</span> IoT, analítica, visualización, IPMVP</div>
+              <div><span class="meta__k">Entregables:</span> documento del proyecto</div>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn" href="smart_campus_energy_optimization.pdf" target="_blank" rel="noopener">Ver PDF</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> · Portfolio</span>
+      <span class="muted">HTML/CSS · sin frameworks</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

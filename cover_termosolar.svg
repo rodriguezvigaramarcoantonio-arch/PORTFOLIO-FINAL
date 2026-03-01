@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0c0f"/>
+      <stop offset="1" stop-color="#14182b"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd56a"/>
+      <stop offset="1" stop-color="#ff7b7b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="980" cy="130" r="70" fill="url(#sun)" opacity="0.95"/>
+  <!-- heliostat field -->
+  <g opacity="0.65" fill="#6ea8ff">
+    <rect x="80" y="420" width="70" height="14" rx="4" transform="rotate(-6 80 420)" />
+<rect x="170" y="460" width="70" height="14" rx="4" transform="rotate(-6 170 460)" />
+<rect x="260" y="500" width="70" height="14" rx="4" transform="rotate(-6 260 500)" />
+<rect x="350" y="420" width="70" height="14" rx="4" transform="rotate(-6 350 420)" />
+<rect x="440" y="460" width="70" height="14" rx="4" transform="rotate(-6 440 460)" />
+<rect x="530" y="500" width="70" height="14" rx="4" transform="rotate(-6 530 500)" />
+<rect x="620" y="420" width="70" height="14" rx="4" transform="rotate(-6 620 420)" />
+<rect x="710" y="460" width="70" height="14" rx="4" transform="rotate(-6 710 460)" />
+<rect x="800" y="500" width="70" height="14" rx="4" transform="rotate(-6 800 500)" />
+<rect x="890" y="420" width="70" height="14" rx="4" transform="rotate(-6 890 420)" />
+  </g>
+  <!-- tower -->
+  <g>
+    <path d="M560 520 L640 520 L610 220 L590 220 Z" fill="#e9e9ef" opacity="0.92"/>
+    <rect x="575" y="195" width="50" height="35" rx="10" fill="#7ef0c1" opacity="0.85"/>
+    <path d="M590 220 L610 220 L600 165 Z" fill="#e9e9ef" opacity="0.92"/>
+  </g>
+  <!-- rays -->
+  <g stroke="#ffd56a" stroke-width="5" opacity="0.25">
+    <line x1="940" y1="150" x2="620" y2="215"/>
+    <line x1="920" y1="110" x2="620" y2="210"/>
+    <line x1="960" y1="110" x2="620" y2="205"/>
+  </g>
+  <text x="60" y="110" fill="#e9e9ef" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="54" font-weight="700">Central termosolar de torre</text>
+  <text x="60" y="170" fill="#b6b8c6" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="28">Diseño conceptual · Rankine · heliostatos · sales fundidas</text>
+</svg>
